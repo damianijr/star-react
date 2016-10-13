@@ -16,12 +16,12 @@ class StarCasting extends React.Component {
         };
 
         // On create class, load the default page casting
-        this.loadCasting('http://swapi.co/api/people/');
+        this.loadCasting('https://swapi.co/api/people/');
     }
 
     /**
      * Load casting by URL.
-     * 
+     *
      * @url
      *    URL for load casting.
      */
