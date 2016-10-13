@@ -25,6 +25,7 @@ class StarImageDefault extends React.Component {
      */
     render() {
         return <img src={this.props.src}
+                    onClick={this.props.onClick}
                     alt={this.props.alt} title={this.props.title}
                     onError={this._loadSrcDefault}/>
     }

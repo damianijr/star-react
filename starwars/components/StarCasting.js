@@ -16,16 +16,16 @@ class StarCasting extends React.Component {
         };
 
         // On create class, load the default page casting
-        this.loadCasting('http://swapi.co/api/people/');
+        this._loadCasting('http://swapi.co/api/people/');
     }
 
     /**
      * Load casting by URL.
-     * 
+     *
      * @url
      *    URL for load casting.
      */
-    loadCasting(url) {
+    _loadCasting(url) {
         let _this = this;
         $.get(url, function(data) {
             _this.setState({
@@ -40,8 +40,8 @@ class StarCasting extends React.Component {
     render() {
         return (
             <div id="casting">
-                <StarPaginator next={this.state.next != null} onClickNext={this.loadCasting.bind(this, this.state.next)}
-                               prev={this.state.prev != null} onClickPrev={this.loadCasting.bind(this, this.state.prev)} />
+                <StarPaginator next={this.state.next != null} onClickNext={this._loadCasting.bind(this, this.state.next)}
+                               prev={this.state.prev != null} onClickPrev={this._loadCasting.bind(this, this.state.prev)} />
 
                 {this.state.casting.map(function(people) {
                     return <StarActor url={people.url} name={people.name} key={people.name} />;
