@@ -30,7 +30,7 @@ class StarActorDetails extends React.Component {
         return (
             <div id="people-detail">
                 <h1>{this.state.name}</h1>
-                <ImageDefault src={'images/casting/' + this.state.name + '.png'}
+                <StarImageDefault src={'images/casting/' + this.state.name + '.png'}
                              alt={this.state.name} title={this.state.name}
                              def={'images/casting/Default.jpg'} />
                 <dl>
