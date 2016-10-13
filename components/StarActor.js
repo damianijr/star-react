@@ -26,7 +26,8 @@ class StarActor extends React.Component {
             <div className="start-people">
                 <StarImageDefault src={'images/casting/' + this.props.name + '.png'}
                               srcDefault={'images/casting/Default.jpg'}
-                              alt={this.props.name} title={this.props.name} />
+                              alt={this.props.name} title={this.props.name}
+                              onClick={this._loadDetails} />
                 <a href="#" onClick={this._loadDetails}>{this.props.name}</a>
             </div>
         );

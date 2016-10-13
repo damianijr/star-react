@@ -13,7 +13,7 @@ class StarActorDetails extends React.Component {
             // Default state values
             name: '-', gender: '-', height: '-', hair_color: '-', eye_color: '-', skin_color: '-'
         };
-        this._loadDetails(this.props.url.replace('http://', 'https://'));
+        this._loadDetails(this.props.url);
     }
 
     /**
@@ -21,6 +21,7 @@ class StarActorDetails extends React.Component {
      */
     _loadDetails(url) {
         let _this = this;
+        console.log(url)
         $.get(url, function(data) {
             _this.setState(data);
         });
@@ -31,8 +32,8 @@ class StarActorDetails extends React.Component {
             <div id="people-detail">
                 <h1>{this.state.name}</h1>
                 <StarImageDefault src={'images/casting/' + this.state.name + '.png'}
-                             alt={this.state.name} title={this.state.name}
-                             def={'images/casting/Default.jpg'} />
+                                  srcDefault={'images/casting/Default.jpg'}
+                                  alt={this.state.name} title={this.state.name} />
                 <dl>
                     <dt>Gender:</dt>
                     <dd>{this.state.gender}</dd>
