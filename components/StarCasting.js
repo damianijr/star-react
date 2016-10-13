@@ -27,7 +27,7 @@ class StarCasting extends React.Component {
      */
     loadCasting(url) {
         let _this = this;
-        $.get(url, function(data) {
+        $.get(url.replace('http://', 'https://'), function(data) {
             _this.setState({
                 casting: data.results,
                 next: data.next,
