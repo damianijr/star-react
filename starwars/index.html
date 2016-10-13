@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Star React Wars!</title>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body style="background: black; margin: 0; padding: 0;">
+        <div id="container">
+            <div id="logo"></div>
+            <h1>Star Wars using React JS!</h1>
+            <div id="app">
+            </div>
+        </div>
+    </body>
+
+    <script src="../js/react.js"></script>
+    <script src="../js/react-dom.js"></script>
+    <script src="../js/JSXTransformer.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+    <script src="components/StarImageDefault.js" type="text/jsx"></script>
+    <script src="components/StarPaginator.js" type="text/jsx"></script>
+
+    <script src="components/StarActor.js" type="text/jsx"></script>
+    <script src="components/StarActorDetails.js" type="text/jsx"></script>
+    <script src="components/StarCasting.js" type="text/jsx"></script>
+
+    <script type="text/jsx">
+        ReactDOM.render(
+            <StarCasting />,
+            document.querySelector('#app')
+        );
+    </script>
+</html>
