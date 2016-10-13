@@ -19,6 +19,9 @@ docker run -d -p 80:80 star-react
 
 open http://localhost !!!
 
+or.. [run a demo http://damianijr.github.io/star-react/](http://damianijr.github.io/star-react/)
+
+
 # next features
 Maybe we have a new version for this workshop approaching react components lifecycle, flux, ES7?
 
