@@ -15,14 +15,13 @@ class StarActorDetails extends React.Component {
         };
         this._loadDetails(this.props.url);
     }
-
+    
     /**
      * Load actor defailts updating copoment's state.
      */
     _loadDetails(url) {
         let _this = this;
-        console.log(url)
-        $.get(url, function(data) {
+        $.get(url.replace('http://', 'https://'), function(data) {
             _this.setState(data);
         });
     }
