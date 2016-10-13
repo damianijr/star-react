@@ -1,0 +1,109 @@
+#container {
+    margin: auto;
+    max-width: 1000px;
+    height: 100%;
+    position: relative;
+}
+#container:before {
+    box-shadow: inset -15px 0 15px -15px rgba(255,255,255,1);
+    content: " ";
+    height: 100%;
+    left: -15px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+#container:after {
+    box-shadow: inset -15px 0 15px -15px rgba(255,255,255,1);
+    content: " ";
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+#container #logo {
+    background: url('../images/bg_lego.jpg') no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: 100%;
+}
+
+#paginator a {
+    color: yellow;
+    text-decoration: none;
+}
+
+h1, #paginator {
+    font-family: 'Poller One', cursive;
+    color: yellow;
+    text-align: center;
+}
+
+.start-people {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin: 7px;
+    border: 1px solid white;
+    position: relative;
+    text-align: center;
+}
+a {
+    font-family: 'Poller One', cursive; color: yellow;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.start-people a {
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.start-people img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 170px;
+    height: 145px;
+    cursor: pointer;
+}
+
+#people-detail img {
+    float: left;
+    margin: 5px;
+    max-width: 200px;
+}
+
+#people-detail h1 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+#people-detail dl {
+    font-family: 'Poller One', cursive;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+
+#people-detail dt {
+    width: 200px;
+}
+#people-detail dt, #people-detail dd {
+    float: left;
+}
+
+#people-detail dt { clear: both;}
+
+#people-detail .back {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
