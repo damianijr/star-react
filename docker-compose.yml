@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nginx:
+    hostname: nginx
+    build: .
+    ports:
+    - "80:80"
+    volumes:
+    - .:/usr/share/nginx/html
