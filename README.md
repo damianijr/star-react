@@ -13,8 +13,7 @@ StarWars apps need run in webserver (like apache, nginx) because components are 
 If u prefere, run nginx in a docker building and running a Dockerfile:
 
 ```
-docker build . -t star-react
-docker run -d -p 80:80 star-react
+docker-compose up -d
 ```
 
 open http://localhost !!!
